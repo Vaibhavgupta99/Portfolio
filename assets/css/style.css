@@ -237,6 +237,7 @@ a:hover {
     background-position: bottom;
     height: 400px;
     background-size: cover;
+    background-repeat: no-repeat;
     border-radius: 15px;
 }
 
