@@ -22,6 +22,15 @@ body {
     font-style: italic;
 }
 
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover {
+    color: #fff;
+}
+
 .sidebar{
     background: #040b14;
     height: 100vh;
@@ -548,8 +557,8 @@ body {
 
     .about {
         width: 100vw;
-        padding-right: 0 !important;
-        padding-left: 12px;
+       /*  padding-right: 0 !important;
+        padding-left: 12px; */
     }
 
     .contact {
