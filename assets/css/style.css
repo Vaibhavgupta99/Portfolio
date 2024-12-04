@@ -1,0 +1,571 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap');
+
+body {
+    color: #fff;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.heading_style {
+    font-family: 'Kaushan Script', cursive;
+    letter-spacing: 1px;
+}
+
+.italics {
+    font-style: italic;
+}
+
+.sidebar{
+    background: #040b14;
+    height: 100vh;
+    width: 19vw;
+    position: fixed;
+    padding: 30px 15px;
+    z-index: 5;
+    left: -300px;
+    transition: all .5s;
+}
+
+.sidebar a {
+    text-decoration: none;
+}
+
+.sidebar .c1 {
+    display: flex;
+    justify-content: center;
+}
+
+.sidebar .img {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    border: 7px solid #2c2f3f;
+    background: url(../img/Vaibhav.jpg);
+    background-size: 110px;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: brightness(0.9);
+}
+
+.sidebar h2 {
+    font-family: 'Kaushan Script', cursive;
+    letter-spacing: 1px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.sidebar .icon {
+    background: #2c2f3f;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.sidebar .icon:hover {
+    background: #149ddd;
+    cursor: pointer;
+}
+
+.sidebar .p1 {
+    color: #a8a9b4;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+.sidebar .p1 #icons {
+    font-size: 22px;
+    padding-right: 10px;
+    transition: 0.3s;
+    width: 30px;
+}
+
+.sidebar .p1:hover {
+    color: #fff;
+    cursor: pointer;
+}
+
+.sidebar .p1:hover  #icons {
+    color: #149ddd;
+}
+
+.slide {
+    margin-left: 300px;
+    transition: all .5s;
+}
+
+.home .c1 {
+    background: url(../img/background3.jpg);
+    /* background-size: 1500px; */
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 81vw;
+    position: fixed;
+    right: 0;
+    z-index: -5;
+    filter: brightness(0.8);
+}
+
+.home .c1 .gray {
+    background: rgba(0, 0, 0, 0.247);
+    height: 100%;
+    width: 100%;
+}
+
+.home .responsive  {
+    z-index: 10;
+    position: fixed;
+    right: 0;
+    margin-right: 20px;
+    margin-top: 20px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    padding: 20px;
+    background: #149ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+.home .responsive:hover {
+    cursor: pointer;
+}
+
+.home .scroll_top {
+    background: #149ddd;
+    color: #fff;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%; 
+    padding: 20px;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+.home .intro {
+    z-index: 1;
+    width: 75%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    margin-top: 13%;
+}
+
+.home .intro h1 {
+    font-size: 60px;
+    font-weight: 600;
+    font-family: 'Kaushan Script', cursive;
+    letter-spacing: 1px;
+}
+
+.home .intro p {
+    font-family: 'Kaushan Script', cursive;
+    letter-spacing: 1px;
+    font-size: 33px;
+    font-weight: 100;
+    margin-left: 10px;
+}
+
+.home .intro .text-slider {
+    font-size: 32px;
+    font-weight: 100;
+    border-bottom: 3px solid #149ddd;
+    padding-bottom: 5px;
+}
+
+.text-slider-items {
+    display: none;
+}
+
+
+.about {
+    width: 81vw;
+    background: #fff;
+    margin-top: 100vh;
+    position: absolute;
+    right: 0;
+    color: #000;
+    padding-right: 0px !important;
+    /* padding-left: 0px !important; */
+}
+
+.about .heading {
+    color: #173b6c;
+    border-bottom: 3px solid #149ddd;
+    width: 45px;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.about .pp {
+    padding-right: 15px;
+}
+
+.about .img {
+    background: url(../img/Vaibhav.jpg);
+    background-position: bottom;
+    height: 400px;
+    background-size: cover;
+    border-radius: 15px;
+}
+
+.about .col-lg-8.c1 {
+    height: 400px;
+    display: flex;
+    align-items: center;
+}
+
+.about .c1 h3 {
+    color: #173b6c;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.about .c1 .r1 .p1 {
+    font-size: 16px;
+}
+
+.about .c1 .r1 .p1 #right {
+    color: #4eb9eb;
+}
+
+.about .c1 .r1 .p1 span {
+    font-weight: bolder;
+}
+
+.skills {
+    background: #f5f8fd;
+    padding-bottom: 40px;
+}
+
+.skills .progress-bar {
+    background: #149ddd;
+    height: 10px;
+}
+
+.skills .progress {
+    height: 10px;
+    border-radius: 0px;
+    margin-top: -10px;
+}
+
+.skills .lang {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.skills .percent {
+    float: right;
+}
+
+.resume h1 {
+    color: #050d18;
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.resume .cc {
+    border-left: 2px solid #1f5297;
+    margin-top: 20px;
+    padding-left: 10px;
+}
+
+.resume .cc h3 {
+    margin-left: 10px;
+    margin-top: -10px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #050d18;;
+}
+
+.resume .cc h3::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50px;
+    background: #fff;
+    border: 2px solid #1f5297;
+    margin-left: -28px;
+}
+
+.resume .cc .year {
+    background: #e4edf9;
+    max-width: max-content;
+    padding:3px 10px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.resume .cc p {
+    margin-left: 10px;
+    color: #272829;
+}
+
+.resume .cc li {
+    color: #272829;
+    margin-bottom: 10px;
+}
+
+.resume .download {
+    width: 100%;
+    text-align: center;
+}
+
+.resume .download .btn {
+    font-weight: bold;
+}
+
+.portfolio {
+    background: #f5f8fd;
+    text-align: center;
+}
+
+.portfolio button {
+    background: #fff;
+    color: #000;
+    border: none;
+    padding: 7px 25px;
+    font-weight: 600;
+}
+
+.portfolio button:hover {
+    background: #fff;
+    color: #149de5;
+}
+
+.portfolio .b1 {
+    border-radius: 20px;
+}
+
+.portfolio .b4 {
+    border-radius: 20px;
+}
+
+.portfolio .website_name {
+    text-align: left;
+    font-family: 'Kaushan Script', cursive;
+    margin-top: 30px;
+    font-size: 26px;
+    color: #173b6c;
+
+}
+
+.portfolio .cimg {
+    padding: 15px 12px;
+}
+
+.portfolio .img_cc {
+    height: 300px;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    overflow: hidden;
+}
+
+.portfolio .img_cc .blur {
+    background: #ffffff81;
+    height: 300px;
+    margin-top: 300px;
+}
+
+.portfolio .img_cc .group1 {
+    height: 40px;
+    width: 100%;
+    transition: all 0.3s;
+}
+
+.portfolio .img_cc .btn {
+    border: none;
+    border-radius: 0px;
+    background: #33b2ecce;    
+    font-size: 20px;
+}
+
+.portfolio .img_cc:hover .blur {
+    margin-top: 0px;
+}
+
+.portfolio .img_cc:hover .group1 {
+    margin-top: -70px;
+}
+
+.portfolio .img_1 {
+    background: url(../img/Femprish.jpg);
+}
+
+.portfolio .img_2 {
+    background: url(../img/Codec.jpg);
+}
+
+.portfolio .img_3 {
+    background: url(../img/anil_provision_store.jpg);
+}
+
+.portfolio .img_4 {
+    background: url(../img/previous_papers.jpg);
+    background-position: top left !important;
+}
+
+.contact {
+    padding-bottom: 60px;
+}
+
+.contact .cc {
+    box-shadow: 0 0 24px 0 rgb(0 0 0 / 12%);
+    padding: 20px;
+}
+
+.contact .ca .c1 {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin-top: -10px;    
+    padding: 0px;    
+}
+
+.contact .ca .c1 .abc {
+    height: 44px;
+    width: 44px;
+    border-radius: 50%;    
+    background: #dff3fc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: #149ddd; 
+    transition: all .3s;
+}
+
+.contact .ca .c2 h1 {
+    font-size: 25px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.contact .ca .c2 p {
+    margin-top: -5px;
+    font-size: 16px;
+}
+
+.contact .ca .a1:hover .abc{
+    background: #149ddd;
+    color: #fff;
+}
+
+.contact .ca .a2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.contact .c3 .form-control {
+    border-radius: 0px;
+    line-height: 30px;
+}
+
+.contact .c4 {
+    text-align: center;
+}
+
+.contact .c4 input {
+    background: #149ddd;
+    padding: 11px 30px;
+    border: none;
+    outline:none;
+    color: #fff;
+    font-weight: 500;
+    transition: all.3s;
+}
+
+.contact .c4 input:hover {
+    background: #05aefc;
+}
+
+.copyright {
+    background: #f5f8fd;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.copyright p {
+    margin: 0;
+}
+
+
+@media (min-width: 992px) {
+    .sidebar {
+        margin-left: 300px;
+    }
+
+    .home .responsive {
+        display: none;
+    }
+}
+
+@media (max-width:992px) {
+
+    .sidebar {
+        width: 300px;
+    }
+    .home .c1 {
+        width: 100vw;
+        background-position: bottom center;
+    }
+
+    .home .intro {
+        width: 95%;
+        margin-top: 250px;
+    }
+
+    .about {
+        width: 100vw;
+        padding-right: 0 !important;
+        padding-left: 12px;
+    }
+
+    .contact {
+        padding-bottom: 10px;
+    }
+
+    .contact .ca .c1 .abc {
+        margin-top: -10px;
+    }
+
+    .contact .ca .c1 .abc.abc1 {
+        margin-top: -30px;
+    }
+
+    .contact .cc_1 {
+        margin-top: 10px;
+        padding: 5px;
+    }
+}
